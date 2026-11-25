@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tendorethane-code</title>
+  <meta name="description" content="Aplikasi buatan tendorethane-code.">
+  <style>
+    :root {
+      --bg: #f3f4f8; --surface: #ffffff; --ink: #1d2230; --muted: #6a7282; --line: #e4e7ee; --accent: #4f46e5;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #12141a; --surface: #1b1e26; --ink: #eceef3; --muted: #9aa1ae; --line: #2e333e; --accent: #8b85ff; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 40px 16px; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    .sub { color: var(--muted); margin: 0 0 24px; }
+    ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    li { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+    li h2 { font-size: 18px; margin: 0 0 4px; }
+    li p { margin: 0 0 10px; color: var(--muted); }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .links a {
+      display: inline-block; padding: 7px 14px; border-radius: 999px; text-decoration: none; font-weight: 600;
+      border: 1px solid var(--line); color: var(--ink);
+    }
+    .links a.main { background: var(--accent); border-color: var(--accent); color: #fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>tendorethane-code</h1>
+    <p class="sub">Aplikasi yang aku bikin.</p>
+    <ul>
+      <li>
+        <h2>Jalur</h2>
+        <p>Pilih rute motor atau mobil di Jabodetabek sebelum berangkat: jalan gede, jalan tikus, tol atau tanpa tol.</p>
+        <div class="links">
+          <a class="main" href="/jalur-maps/">Buka</a>
+          <a href="https://github.com/tendorethane-code/jalur-maps/releases">APK Android</a>
+        </div>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>

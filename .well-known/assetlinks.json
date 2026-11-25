@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.tendorethane_code.jalur",
+      "sha256_cert_fingerprints": [
+        "C9:F3:5D:EF:ED:F0:E0:7D:8A:48:75:D5:04:A0:9B:06:09:04:3C:62:BD:70:55:4A:CB:6A:CD:11:BB:F3:25:D3"
+      ]
+    }
+  }
+]
