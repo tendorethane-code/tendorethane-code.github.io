@@ -17,6 +17,10 @@ Pages: **Settings → Pages → Deploy from a branch → `main` / `(root)`**.
 |---|---|---|---|---|
 | Jalur | [/jalur-maps/](https://tendorethane-code.github.io/jalur-maps/) | [jalur-maps](https://github.com/tendorethane-code/jalur-maps) | `io.github.tendorethane_code.jalur` | `C9:F3:5D:EF:ED:F0:E0:7D:8A:48:75:D5:04:A0:9B:06:09:04:3C:62:BD:70:55:4A:CB:6A:CD:11:BB:F3:25:D3` |
 
+Unduhan APK Jalur terbaru selalu di
+`https://github.com/tendorethane-code/jalur-maps/releases/latest/download/jalur.apk`. Halaman depan
+nge-link ke situ. Pre-release (`-uji…`) gak pernah dihitung "latest".
+
 Sidik jari itu publik, aman ditaruh di sini. Yang rahasia adalah file kuncinya dan password-nya.
 
 ## Layanan di luar GitHub
