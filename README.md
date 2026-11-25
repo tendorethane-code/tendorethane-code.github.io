@@ -19,6 +19,15 @@ Pages: **Settings → Pages → Deploy from a branch → `main` / `(root)`**.
 
 Sidik jari itu publik, aman ditaruh di sini. Yang rahasia adalah file kuncinya dan password-nya.
 
+## Layanan di luar GitHub
+
+| Layanan | Di mana | Dipakai | Kode |
+|---|---|---|---|
+| `jalur-resolver` (buka link pendek Google Maps) | Cloudflare Workers, akun pribadi: `https://jalur-resolver.tendo-rethane.workers.dev/` | Jalur (`RESOLVER` di `public/config.js`) | `resolver/worker.js` di repo jalur-maps. Di-deploy manual: dashboard → worker → Edit code → tempel → Deploy |
+
+Kalau `resolver/worker.js` diubah, isinya harus ditempel ulang di dashboard Cloudflare. Gak ada
+deploy otomatis.
+
 ## Aturan
 
 1. **File rilis (APK, EXE, ZIP) ditaruh di GitHub Releases repo proyeknya, bukan di sini.**
@@ -63,6 +72,8 @@ Jalanin tiap kali repo ini disambung ke sesi Claude, atau abis ngubah sesuatu di
       Hasilnya harus menyebut tiap paket di tabel, dengan sidik jari yang sama.
 - [ ] Tiap aplikasi di tabel: halaman webnya kebuka, dan Releases-nya punya APK terbaru (kalau ada APK).
 - [ ] `.nojekyll` masih ada.
+- [ ] Tiap layanan di luar GitHub masih hidup. Resolver: link pendek Google Maps yang asli
+      harus dijawab 200 dengan URL yang ada `!3d…!4d…`, dan link non-Google harus ditolak 400.
 - [ ] Gak ada file kunci (`*.p12`, `*.jks`, `*.keystore`) atau password yang ke-commit di repo mana pun.
 - [ ] Gak ada folder di sini yang namanya sama dengan repo proyek.
 - [ ] Belum ada custom domain di Settings → Pages (atau kalau ada, poin 7 udah dikerjain).
